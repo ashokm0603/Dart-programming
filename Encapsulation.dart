@@ -14,10 +14,23 @@ class Login {
   }
 }
 
+
+class Demo {
+  void test() {
+    print("hello");
+  }
+}
+
+
 void main() {
   Login l = new Login("admin", "admin@123");
   print(l.getLoginDetails());
   l.setUserName("user");
   l.setPassword("user@123");
   print("forgotten username and password: ${l.getLoginDetails()}");
+
+
+  
+  Demo d1 = new Demo();
+  d1.test();
 }
